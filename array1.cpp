@@ -99,6 +99,27 @@ int twostatepointer(int arr[] , int size ){
     
 
 }
+//(5) printing the array in the back and front direction  in the array or two state pointer
+
+    // (M1) this is using two state pointer while loop a short cut is created using reversal function
+
+// int twostatepointer(int arr[] , int size ){
+//     int i =0;
+//     int j =size-1;
+    
+//     while (j>=i)                   // ess mee haam swap function ka use kar ke bass swap kar raha he hai 
+//     {
+//        swap(arr[i],arr[j]); //  ye bhi kar sakthe hai arr[i++],arr[j--] phele use hoga fer decriment or icrement hoga 
+//        i++;
+//        j--;
+
+//     }
+//     for (int i = 0; i < size; i++)   // swap hojane ke baad print bhi tho karna padega uska kaam ye kar raha hai 
+//    {
+//     cout<<arr[i]<<" ";
+//    }
+
+// }
 
 
 
@@ -192,6 +213,17 @@ int main(){
    int arr[]={10,20,30,40,50,60};
    int size=6;
    twostatepointer(arr,size);
+
+
+       
+//Method 2 // using reversal pre define function
+reverse(arr,arr+7);
+for (int i = 0; i < size; i++)
+{
+    cout<<arr[i]<<" "; 
+}
+
+  
 
    
 

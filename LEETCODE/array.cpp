@@ -43,21 +43,21 @@
 // }
 // If all assertions pass, then your solution will be accepted.
  
- class Solution {
-public:
-    int removeDuplicates(vector<int>& nums) {
-        if (nums.empty()) return 0;
+//  class Solution {
+// public:
+//     int removeDuplicates(vector<int>& nums) {
+//         if (nums.empty()) return 0;
 
-    int i = 0;  // Initialize the first pointer
+//     int i = 0;  // Initialize the first pointer
 
-    for (int j = 1; j < nums.size(); j++) {
-        if (nums[j] != nums[i]) {  // Compare current element with the last unique element
-            i++;                   // Move the pointer for unique elements
-            nums[i] = nums[j];      // Place the new unique element at the next position
-        }
-    }
+//     for (int j = 1; j < nums.size(); j++) {
+//         if (nums[j] != nums[i]) {  // Compare current element with the last unique element
+//             i++;                   // Move the pointer for unique elements
+//             nums[i] = nums[j];      // Place the new unique element at the next position
+//         }
+//     }
 
-    return i + 1;  // The number of unique elements
+//     return i + 1;  // The number of unique elements
 }
 };
 // #include<iostream> 
@@ -111,24 +111,24 @@ public:
 //  Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
 
 // You must write an algorithm with O(log n) runtime complexity.
- class Solution {
-public:
-    int searchInsert(vector<int>& nums, int target) {
-        int size =nums.size();
-        int s=0;
-        int e=size-1;
-        while(e>=s){
-            int mid=(s+e)/2;
-            if(nums[mid]==target){
-                return mid;
-            }
-            else if (target<nums[mid]){
-                e=mid-1;
-            }
-            else if (target>nums[mid]){
-                s=mid+1;
-            }
-        }
-return s ;
-}
-};
+//  class Solution {
+// public:
+//     int searchInsert(vector<int>& nums, int target) {
+//         int size =nums.size();
+//         int s=0;
+//         int e=size-1;
+//         while(e>=s){
+//             int mid=(s+e)/2;
+//             if(nums[mid]==target){
+//                 return mid;
+//             }
+//             else if (target<nums[mid]){
+//                 e=mid-1;
+//             }
+//             else if (target>nums[mid]){
+//                 s=mid+1;
+//             }
+//         }
+// return s ;
+// }
+// };

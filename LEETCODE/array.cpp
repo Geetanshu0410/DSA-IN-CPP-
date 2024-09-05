@@ -181,3 +181,51 @@
 //         }
 //     return s;}
 // };
+
+
+
+//  Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.
+
+// If target is not found in the array, return [-1, -1].
+
+// You must write an algorithm with O(log n) runtime complexity.
+
+ (soln)
+//  class Solution {
+// public:
+//     vector<int> searchRange(vector<int>& nums, int target) {
+//         vector<int> result(2, -1);
+        
+//         // Find the first occurrence of the target
+//         int left = 0, right = nums.size() - 1;
+//         while (left <= right) {
+//             int mid = left + (right - left) / 2;
+//             if (nums[mid] == target) {
+//                 result[0] = mid;
+//                 right = mid - 1;  // Continue searching to the left
+//             } else if (nums[mid] < target) {
+//                 left = mid + 1;
+//             } else {
+//                 right = mid - 1;
+//             }
+//         }
+        
+//         // Find the last occurrence of the target
+//         left = 0, right = nums.size() - 1;
+//         while (left <= right) {
+//             int mid = left + (right - left) / 2;
+//             if (nums[mid] == target) {
+//                 result[1] = mid;
+//                 left = mid + 1;  // Continue searching to the right
+//             } else if (nums[mid] < target) {
+//                 left = mid + 1;
+//             } else {
+//                 right = mid - 1;
+//             }
+//         }
+        
+//         return result;
+//     }
+// };
+    
+

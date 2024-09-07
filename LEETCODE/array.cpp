@@ -274,3 +274,43 @@
 //     }
 // };
 
+ (Q11)
+ 
+//  You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
+
+// Find two lines that together with the x-axis form a container, such that the container contains the most water.
+
+// Return the maximum amount of water a container can store.
+
+// Notice that you may not slant the container.
+
+ 
+class Solution {
+public:
+    int maxArea(vector<int>& height) {
+        int left = 0;  // Pointer at the beginning of the array
+        int right = height.size() - 1;  // Pointer at the end of the array
+        int maxWater = 0;  // Variable to store the maximum water area
+        
+        // Iterate while the left pointer is less than the right pointer
+        while (left < right) {
+            // Calculate the width and height of the current container
+            int width = right - left;
+            int containerHeight = min(height[left], height[right]);
+            
+            // Calculate the area and update the maximum area found so far
+            int currentArea = width * containerHeight;
+            maxWater = max(maxWater, currentArea);
+            
+            // Move the pointer of the shorter line
+            if (height[left] < height[right]) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+        
+        return maxWater;
+    }
+
+};

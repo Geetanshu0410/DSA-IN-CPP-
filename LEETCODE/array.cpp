@@ -510,3 +510,37 @@ public:
         return false;
     }
 };
+3. Longest Substring Without Repeating Characters
+Solved
+Medium
+Topics
+Companies
+Hint
+Given a string s, find the length of the longest 
+substring
+ without repeating characters
+class Solution {
+public:
+ int lengthOfLongestSubstring(string s) {
+        unordered_map<char, int> charIndexMap;  // To store the last index of characters
+        int maxLength = 0;  // To keep track of the maximum length
+        int start = 0;      // Left boundary of the sliding window
+        
+        for (int end = 0; end < s.length(); ++end) {
+            char currentChar = s[end];
+            
+            // If the character is already in the map, move the start to the right of its last occurrence
+            if (charIndexMap.find(currentChar) != charIndexMap.end()) {
+                start = max(start, charIndexMap[currentChar] + 1);
+            }
+            
+            // Update the last index of the current character
+            charIndexMap[currentChar] = end;
+            
+            // Calculate the current window length and update maxLength
+            maxLength = max(maxLength, end - start + 1);
+        }
+        
+        return maxLength;
+    }
+};

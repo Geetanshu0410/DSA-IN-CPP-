@@ -1,7 +1,7 @@
 
 // Q1 leet code TWO SUM EASY  
 // #include<iostream> 
-// using namespace std;
+// using namespace std;   
 
 // int index(int arr[],int target , int size){
 //     for (int i = 0; i < size ; i++)

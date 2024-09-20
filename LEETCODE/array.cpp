@@ -8,6 +8,8 @@
 
 //     {
 //        for (int  j = size-1 ; j>=0; j--)
+
+
 //        {
 //          if (arr[i]+arr[j]==target)
 //          {

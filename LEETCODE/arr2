@@ -7,7 +7,7 @@ public:
 
 
             int pop = x % 10;  // Get the last digit
-            x /= 10;  // Remove the last digit
+            x /= 10;  // Remove the last digit  
             
             // Check if the reversedNum will overflow/underflow after the operation
             if (reversedNum > INT_MAX / 10 || (reversedNum == INT_MAX / 10 && pop > 7)) {

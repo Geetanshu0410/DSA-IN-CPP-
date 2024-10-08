@@ -3,7 +3,7 @@
 using namespace std;
 
 // LEETCODE Q1 ON THE ARRAY
-// Given a non-empty array of integers nums , every element appears twice except
+// Given a non-empty array of integers nums , every element appears twice except  
 // for one. Find that single one. leetcode Q1)on array with time complexcity as 1 and spacecomplexcity as 1 
  
                                                  //fucntion place

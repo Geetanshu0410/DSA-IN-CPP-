@@ -1,7 +1,7 @@
 Q1) Given an array arr of size n−1 that contains distinct integers in the range of 1 to n (inclusive),
 find the missing element. The array is a permutation of size n with one element missing. Return the missing element .
             
-class Solution {  
+class Solution {   
   public: 
    
     // Note that the size of the array is n-1

@@ -2,7 +2,7 @@
 #include<limits.h>  
 using namespace std;
  
-//                               creating the function for   the linear search// 
+//                               creating the function for   the linear search//   
 //(1)    
     //  int findingtarget(int arr[],int size  ,int targert){ // creating a fucntion wi  th its requirement      
     //     for (int i = 0; i < size; i++) // tellling it    size to so that loop can be run for that   time      

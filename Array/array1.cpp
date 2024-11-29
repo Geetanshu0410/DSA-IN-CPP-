@@ -1,7 +1,7 @@
   #include<iostream>  
 #include<limits.h>  
 using namespace std;
- 
+    
 //                               creating the function for   the linear search//     
 //(1)      
     //  int findingtarget(int arr[],int size  ,int targert){ // creating a fucntion wi  th its req    uirement        

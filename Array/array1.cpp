@@ -5,7 +5,7 @@ using namespace std;
 //                               creating  the function for   the linear search//     
 //(1)      
     //  int findingtarget(int arr[],int size  ,int targert){ // creating a fucntion wi  th its req    uirement        
-    //     for (int i = 0; i < size; i++) // tellling it    size to so that loop can be run for that   t   ime       
+    //     for (int i = 0; i < size;  i++) // tellling it    size to so that loop can be run for that   t   ime       
     //     {  
     //         if (arr[i]==targert)              // this statement will rectify this    
     //         {

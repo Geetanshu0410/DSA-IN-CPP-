@@ -1,6 +1,6 @@
   #include<iostream>  
 #include<limits.h>  
-using namespace std;
+using namespace std; 
     
 //                               creating  the function for   the linear search//     
 //(1)      

@@ -14,3 +14,30 @@ class Solution {
         }
         return false ;
     }
+BEST APPROACH 
+class Solution {
+  public:
+    bool twoSum(vector<int>& arr, int target) {
+        // code here
+        int n=arr.size();
+        sort(arr.begin(),arr.end());
+        int l=0;
+        int h=n-1;
+        int csum;
+        while(l<h){
+        csum=arr[l]+arr[h];
+        if(csum>target){
+            h--;
+        }
+        else if(csum<target){
+            l++;
+        }
+        else if(csum==target){
+            return true ;
+        }
+        
+            
+        }
+        return false ; 
+    }
+};
